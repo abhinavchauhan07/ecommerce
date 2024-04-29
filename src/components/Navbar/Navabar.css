@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --heading-color: #222;
+    --para-color: #465b52;
+    --header-color: #404040;
+    --box-shadow-color: rgba(151, 143, 143, 0.1);
+    --pages-color: #1a1a1a;
+    --product-border: #cce7d0;
+    --wishlist: red;
+    --white: #fff;
+    --lightWhite: gba(119, 122, 126, 0.6);
+  }
+.navbar {
+  width: 100%;
+  background-color: #d9d9d9;
+  color:white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: var(--header-color);
+  box-shadow: 0 5px 15px var(--box-shadow-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+a { color: inherit;
+text-decoration: none; } 
+
+.navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    width: 500px;
+    margin-right: 16px;
+    font-size: 16px;
+    border-radius: 1rem;
+    height: 50px;
+  }
+  .navbar i{
+    font-size:30px
+  }
+#items {
+    display: flex; /* Flexbox for layout */
+    gap: 30px; /* Spacing between child items */
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+ul{
+    list-style-type: none;
+}
+
+.home,
+.products,
+.cart {
+    padding: 10px 15px; /* Padding around the content */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.home:hover,
+.products:hover,
+.cart:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+.category {
+  overflow-x: auto; 
+  white-space: nowrap; 
+  width: 100%; 
+  height: 35px;
+  background-color:#c0b4b4;
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-list {
+  display: inline-flex; 
+  padding: 10px;
+  margin: 0;
+}
+
+.category-items {
+  margin-right: 10px; /* Adjust spacing between category items */
+}
+
+.category-items:last-child {
+  margin-right: 0; /* Remove margin from last item */
+}
+
+.category-items a {
+  text-decoration: none;
+  /* color: #333; */
+  padding: 10px 20px;
+  /* background-color: #f0f0f0; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-items a:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+.icon-cart {
+  position: relative;
+}
+
+.icon-cart span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 40%;
+  padding: 4px;
+  font-size: 12px;
+}

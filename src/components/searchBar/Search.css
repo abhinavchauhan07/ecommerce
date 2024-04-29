@@ -1,0 +1,26 @@
+.search-items {
+    height: 40px;
+    width: 40%;
+    background-color: var(--white);
+    border:2px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .search-items input {
+    height: 40px;
+    background-color: transparent;
+    width: 90%;
+    border: none;
+    font-size: 1.15rem;
+  }
+  .search-items input:focus {
+    outline: none;
+  }
+  .search-items i {
+    color: var(--lightWhite);
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+   
